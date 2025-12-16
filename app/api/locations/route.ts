@@ -17,7 +17,9 @@ export async function GET() {
         lat: row.lat,
         lng: row.lng,
         location: row.location,
-        status: row.status,
+        district: row.district,
+        subdistrict: row.subdistrict,
+        province: row.province,
     }));
 
     return NextResponse.json(safeData);
